@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getFriends } from '../actions';
-import axios from 'axios';
+//import axios from 'axios';
 
 class FriendsList extends Component {
     componentDidMount() {
@@ -31,7 +31,7 @@ class FriendsList extends Component {
 const mapStateToProps = (state) => {
     return {
         friends: state.friends
-    };
+    };  //this is application state
 };
 
 export default connect(mapStateToProps, { getFriends })(FriendsList);
